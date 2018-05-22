@@ -3,7 +3,7 @@ A Node.js module that create an array or dictionnary of generic type object from
 
 ## Installation
 ```sh
-npm install ts_parser --save
+npm install array_typer --save
 ```
 
 ## Usage
