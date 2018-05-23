@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/FranzStrudel/-caliatys-array-typer.svg?branch=master)](https://travis-ci.org/FranzStrudel/-caliatys-array-typer)
 
-[![Coverage Status](https://coveralls.io/repos/github/FranzStrudel/ts_parser/badge.svg?branch=master)](https://coveralls.io/github/FranzStrudel/ts_parser?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/FranzStrudel/-caliatys-array-typer/badge.svg?branch=master)](https://coveralls.io/github/FranzStrudel/-caliatys-array-typer?branch=master)
 
 # @caliatys/array-typer
 A Node.js module that create an array or dictionnary of generic type object from an array of Object

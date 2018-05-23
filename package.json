@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FranzStrudel/ts_parser.git"
+    "url": "git+https://github.com/FranzStrudel/-caliatys-array-typer.git"
   },
   "author": "Paul-Emile Morruzzi <pe+npm@morruzzi.fr>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FranzStrudel/ts_parser/issues"
+    "url": "https://github.com/FranzStrudel/-caliatys-array-typer/issues"
   },
-  "homepage": "https://github.com/FranzStrudel/ts_parser#readme",
+  "homepage": "https://github.com/FranzStrudel/-caliatys-array-typer#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "coveralls": "^3.0.1",
