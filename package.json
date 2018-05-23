@@ -1,12 +1,14 @@
 {
-  "name": "array_typer",
-  "version": "1.0.1",
+  "name": "@caliatys/array-typer",
+  "version": "1.0.0",
   "description": "Create an array or dictionnary of generic type object",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "mocha --reporter spec"
+    "test": "nyc mocha",
+    "report": "nyc report --reporter=lcov",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,9 @@
   "homepage": "https://github.com/FranzStrudel/ts_parser#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
     "mocha": "^5.2.0",
+    "nyc": "^11.8.0",
     "typescript": "^2.8.3"
   }
 }

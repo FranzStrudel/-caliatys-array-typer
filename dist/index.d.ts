@@ -1,17 +1,10 @@
 export declare class ArrayTyper {
-    static typeArray<T>(c: {
-        new (json: any): T;
-    }, json: any[]): T[];
-    static typeArrayWithParam<T>(c: {
-        new (json: any, param: any): T;
-    }, json: any[], param: any): T[];
-    static typeAsDict<T>(c: {
-        new (json: any): IDictDeserializable<T>;
-    }, json: any[]): {
+    static asArray<T>(c: {
+        new (object: any, ...args: any[]): T;
+    }, arrayOfObject: {}[] | string, ...args: any[]): T[];
+    static asDict<T>(c: {
+        new (object: any, ...args: any[]): T;
+    }, arrayOfObject: {}[] | string, callback: (object: T) => any, ...args: any[]): {
         [key: number]: T;
     };
-}
-export interface IDictDeserializable<T> {
-    getObject(): T;
-    getKey(): number;
 }
