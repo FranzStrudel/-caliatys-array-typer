@@ -1,6 +1,6 @@
 'use strict';
 var expect = require('chai').expect;
-var index = require('../dist/index.js');
+var ArrayTyper = require('../dist/index.js').ArrayTyper;
 
 var MyObject = /** @class */ (function () {
   function MyObject(json, param) {
@@ -29,7 +29,7 @@ var MyObject = /** @class */ (function () {
 var json = [{"key": 1}]
 
 describe('typeArray function test', () => {
-  var result = index.typeArray(MyObject, json);
+  var result = ArrayTyper.typeArray(MyObject, json);
   it('should return Array', () => {
     expect(result.constructor).to.equal(Array);
   });
@@ -42,7 +42,7 @@ describe('typeArray function test', () => {
 });
 
 describe('typeArrayWithParam function test', () => {
-  var result = index.typeArrayWithParam(MyObject, json, 4);
+  var result = ArrayTyper.typeArrayWithParam(MyObject, json, 4);
     it('should return Array', () => {
       expect(result.constructor).to.equal(Array);
     });
@@ -55,7 +55,7 @@ describe('typeArrayWithParam function test', () => {
 });
 
 describe('typeAsDict function test', () => {
-  var result = index.typeAsDict(MyObject, json);
+  var result = ArrayTyper.typeAsDict(MyObject, json);
   it('should return Object', () => {
     expect(result.constructor).to.equal(Object);
   });

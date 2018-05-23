@@ -2,7 +2,8 @@
   "name": "array_typer",
   "version": "1.0.0",
   "description": "Create an array or dictionnary of generic type object",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha --reporter spec"

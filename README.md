@@ -11,25 +11,25 @@ npm install array_typer --save
 ### Javascript
 
 ```javascript
-var arrayTyper = require('array_typer');
+let ArrayTyper = require('array_typer').ArrayTyper;
 
-var MyObject = /** @class */ (function () {
+let MyObject = /** @class */ (function () {
   function MyObject(json) {
       this.key = json.key;
   }
   return MyObject;
 }());
 
-var json = [{"key": 1},{"key": 2}]
+let json = [{"key": 1},{"key": 2}]
 
-var typedArray = index.typeArray(MyObject, json);
+let typedArray = ArrayTyper.typeArray(MyObject, json);
 ```
 
 ### TypeScript
 ```typescript
-import { typeArray } from 'array_typer';
+import { ArrayTyper } from 'array_typer';
 
-var json = [{"key": 1},{"key": 2}]
+let json = [{"key": 1},{"key": 2}]
 
 class MyObject
 {
@@ -41,7 +41,7 @@ class MyObject
   }
 }
 
-var typedArray: MyObject[] = typeArray(MyObject, json));
+let typedArray: MyObject[] = ArrayTyper.typeArray(MyObject, json));
 ```
 
 ### Test
