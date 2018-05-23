@@ -41,7 +41,7 @@ class MyObject
   }
 }
 
-let typedArray: MyObject[] = ArrayTyper.typeArray(MyObject, json));
+let typedArray: MyObject[] = ArrayTyper.typeArray(MyObject, json);
 ```
 
 ### Test
